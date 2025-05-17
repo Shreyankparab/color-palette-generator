@@ -547,3 +547,13 @@ body {
     font-weight: bolder;
   }
 }
+
+@media (max-width: 310px) {
+  .floating-top-right-img {
+    width: 250px;
+    height: 595px;
+    left: 10px;
+    top: 5px;
+    border-radius: 8px;
+  }
+}
