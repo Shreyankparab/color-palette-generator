@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6F8nMJXgDlhzvj1UOYwFV1h0z1uuQB3z+M7vRopMZkfw9vP0E1DflXUZzC+g9z+7d2tg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Random Color generator..</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- Add this inside <body> -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #0f172a"
+    >
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand fw-bold text-white" href="#">PaletteCraft</a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon white-toggler"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse bg-dark-custom rounded-bottom"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav ms-auto text-end">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#generator-section"
+                >Generator</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#popular-section">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#learn-color-section"
+                >Learn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div
+        class="container-fluid hero-section text-white py-5 position-relative"
+      >
+        <!-- Top-right absolute image -->
+        <img
+          src="assets/logo-image.png"
+          alt="Top Right Image"
+          class="floating-top-right-img"
+        />
+
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-8">
+              <h1 class="hero-title">
+                Create Stunning Color Palettes Instantly
+              </h1>
+              <p class="hero-subtitle">
+                -Easily generate, copy, and explore beautiful palettes for your
+                next project.
+              </p>
+              <div class="d-flex justify-content-start mt-4">
+                <a href="#generator-section" class="btn btn-warning cta-btn"
+                  >Try Generator</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid generator-section py-5"
+        style="background-color: #0f172a; color: #f9fafb"
+        id="generator-section"
+      >
+        <div class="container">
+          <h1 class="mb-5" style="color: #f97316; font-weight: bolder">
+            Generate Your Palette
+          </h1>
+          <div class="row">
+            <!-- Left: Horizontal row of vertical rectangles -->
+            <div class="col-md-9 d-flex align-items-center">
+              <div class="d-flex" style="gap: 0.2rem">
+                <!-- Repeat for all 6 blocks -->
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+                <div class="color-block rounded">
+                  <div class="icon-overlay">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="color-code">#XXXXXX</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Vertically stacked buttons -->
+            <div
+              class="col-md-3 d-flex flex-column justify-content-center align-items-start"
+              style="gap: 1.5rem"
+            >
+              <button
+                id="generateBtn"
+                class="btn w-100"
+                style="background-color: #f97316; color: white"
+              >
+                Generate Random
+              </button>
+              <button class="btn btn-outline-light w-100" id="copy-palette-btn">
+                Copy Palette
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid popular-section py-5"
+        style="background-color: #0f172a; color: #f9fafb"
+        id="popular-section"
+      >
+        <div class="container">
+          <h1 class="mb-5" style="color: #f97316; font-weight: bolder">
+            Popular Colors
+          </h1>
+          <h2 class="section-heading">UI Design Palette</h2>
+          <div class="palette-carousel">
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #cdb4db">
+                  <span>#cdb4db</span>
+                </div>
+                <div class="color" style="background-color: #ffc8dd">
+                  <span>#ffc8dd</span>
+                </div>
+                <div class="color" style="background-color: #ffafcc">
+                  <span>#ffafcc</span>
+                </div>
+                <div class="color" style="background-color: #bde0fe">
+                  <span>#bde0fe</span>
+                </div>
+                <div class="color" style="background-color: #a2d2ff">
+                  <span>#a2d2ff</span>
+                </div>
+              </div>
+              <div class="palette-label">Elegant Serenity</div>
+            </div>
+
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #780000">
+                  <span>#780000</span>
+                </div>
+                <div class="color" style="background-color: #c1121f">
+                  <span>#c1121f</span>
+                </div>
+                <div class="color" style="background-color: #fdf0d5">
+                  <span>#fdf0d5</span>
+                </div>
+                <div class="color" style="background-color: #003049">
+                  <span>#003049</span>
+                </div>
+                <div class="color" style="background-color: #669bbc">
+                  <span>#669bbc</span>
+                </div>
+              </div>
+              <div class="palette-label">Classic Contrast</div>
+            </div>
+
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #606c38">
+                  <span>#606c38</span>
+                </div>
+                <div class="color" style="background-color: #283618">
+                  <span>#283618</span>
+                </div>
+                <div class="color" style="background-color: #fefae0">
+                  <span>#fefae0</span>
+                </div>
+                <div class="color" style="background-color: #dda15e">
+                  <span>#dda15e</span>
+                </div>
+                <div class="color" style="background-color: #bc6c25">
+                  <span>#bc6c25</span>
+                </div>
+              </div>
+              <div class="palette-label">Nature’s Warmth</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #8ecae6">
+                  <span>#8ecae6</span>
+                </div>
+                <div class="color" style="background-color: #219ebc">
+                  <span>#219ebc</span>
+                </div>
+                <div class="color" style="background-color: #023047">
+                  <span>#023047</span>
+                </div>
+                <div class="color" style="background-color: #ffb703">
+                  <span>#ffb703</span>
+                </div>
+                <div class="color" style="background-color: #fb8500">
+                  <span>#fb8500</span>
+                </div>
+              </div>
+              <div class="palette-label">Dynamic Blue</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #e63946">
+                  <span>#e63946</span>
+                </div>
+                <div class="color" style="background-color: #f1faee">
+                  <span>#f1faee</span>
+                </div>
+                <div class="color" style="background-color: #a8dadc">
+                  <span>#a8dadc</span>
+                </div>
+                <div class="color" style="background-color: #457b9d">
+                  <span>#457b9d</span>
+                </div>
+                <div class="color" style="background-color: #1d3557">
+                  <span>#1d3557</span>
+                </div>
+              </div>
+              <div class="palette-label">Fresh Contrast</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #ffbe0b">
+                  <span>#ffbe0b</span>
+                </div>
+                <div class="color" style="background-color: #fb5607">
+                  <span>#fb5607</span>
+                </div>
+                <div class="color" style="background-color: #ff006e">
+                  <span>#ff006e</span>
+                </div>
+                <div class="color" style="background-color: #8338ec">
+                  <span>#8338ec</span>
+                </div>
+                <div class="color" style="background-color: #3a86ff">
+                  <span>#3a86ff</span>
+                </div>
+              </div>
+              <div class="palette-label">Electric Sunset</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #ccd5ae">
+                  <span>#ccd5ae</span>
+                </div>
+                <div class="color" style="background-color: #e9edc9">
+                  <span>#e9edc9</span>
+                </div>
+                <div class="color" style="background-color: #fefae0">
+                  <span>#fefae0</span>
+                </div>
+                <div class="color" style="background-color: #faedcd">
+                  <span>#faedcd</span>
+                </div>
+                <div class="color" style="background-color: #d4a373">
+                  <span>#d4a373</span>
+                </div>
+              </div>
+              <div class="palette-label">Vintage Pastels</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #dad7cd">
+                  <span>#dad7cd</span>
+                </div>
+                <div class="color" style="background-color: #a3b18a">
+                  <span>#a3b18a</span>
+                </div>
+                <div class="color" style="background-color: #588157">
+                  <span>#588157</span>
+                </div>
+                <div class="color" style="background-color: #3a5a40">
+                  <span>#3a5a40</span>
+                </div>
+                <div class="color" style="background-color: #344e41">
+                  <span>#344e41</span>
+                </div>
+              </div>
+              <div class="palette-label">Rustic Greens</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #edede9">
+                  <span>#edede9</span>
+                </div>
+                <div class="color" style="background-color: #d6ccc2">
+                  <span>#d6ccc2</span>
+                </div>
+                <div class="color" style="background-color: #f5ebe0">
+                  <span>#f5ebe0</span>
+                </div>
+                <div class="color" style="background-color: #e3d5ca">
+                  <span>#e3d5ca</span>
+                </div>
+                <div class="color" style="background-color: #d5bdaf">
+                  <span>#d5bdaf</span>
+                </div>
+              </div>
+              <div class="palette-label">Cozy Minimalism</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #264653">
+                  <span>#264653</span>
+                </div>
+                <div class="color" style="background-color: #2a9d8f">
+                  <span>#2a9d8f</span>
+                </div>
+                <div class="color" style="background-color: #e9c46a">
+                  <span>#e9c46a</span>
+                </div>
+                <div class="color" style="background-color: #f4a261">
+                  <span>#f4a261</span>
+                </div>
+                <div class="color" style="background-color: #e76f51">
+                  <span>#e76f51</span>
+                </div>
+              </div>
+              <div class="palette-label">Warm Horizons</div>
+            </div>
+
+            <!-- Add more cards as needed -->
+          </div>
+
+          <h2 class="section-heading">Branding Pallete</h2>
+          <div class="palette-carousel1">
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #16697a">
+                  <span>#16697a</span>
+                </div>
+                <div class="color" style="background-color: #489fb5">
+                  <span>#489fb5</span>
+                </div>
+                <div class="color" style="background-color: #82c0cc">
+                  <span>#82c0cc</span>
+                </div>
+                <div class="color" style="background-color: #ede7e3">
+                  <span>#ede7e3</span>
+                </div>
+                <div class="color" style="background-color: #ffa62b">
+                  <span>#ffa62b</span>
+                </div>
+              </div>
+              <div class="palette-label">Professional Website</div>
+            </div>
+
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #003049">
+                  <span>#003049</span>
+                </div>
+                <div class="color" style="background-color: #d62828">
+                  <span>#d62828</span>
+                </div>
+                <div class="color" style="background-color: #f77f00">
+                  <span>#f77f00</span>
+                </div>
+                <div class="color" style="background-color: #fcbf49">
+                  <span>#fcbf49</span>
+                </div>
+                <div class="color" style="background-color: #eae2b7">
+                  <span>#eae2b7</span>
+                </div>
+              </div>
+              <div class="palette-label">Home Appliances</div>
+            </div>
+
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #3d5a80">
+                  <span>#3d5a80</span>
+                </div>
+                <div class="color" style="background-color: #98c1d9">
+                  <span>#98c1d9</span>
+                </div>
+                <div class="color" style="background-color: #e0fbfc">
+                  <span>#e0fbfc</span>
+                </div>
+                <div class="color" style="background-color: #ee6c4d">
+                  <span>#ee6c4d</span>
+                </div>
+                <div class="color" style="background-color: #293241">
+                  <span>#293241</span>
+                </div>
+              </div>
+              <div class="palette-label">Creative Portfolio</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #335c67">
+                  <span>#335c67</span>
+                </div>
+                <div class="color" style="background-color: #fff3b0">
+                  <span>#fff3b0</span>
+                </div>
+                <div class="color" style="background-color: #e09f3e">
+                  <span>#e09f3e</span>
+                </div>
+                <div class="color" style="background-color: #9e2a2b">
+                  <span>#9e2a2b</span>
+                </div>
+                <div class="color" style="background-color: #540b0e">
+                  <span>#540b0e</span>
+                </div>
+              </div>
+              <div class="palette-label">Vintage Branding</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #0d3b66">
+                  <span>#0d3b66</span>
+                </div>
+                <div class="color" style="background-color: #faf0ca">
+                  <span>#faf0ca</span>
+                </div>
+                <div class="color" style="background-color: #f4d35e">
+                  <span>#f4d35e</span>
+                </div>
+                <div class="color" style="background-color: #ee964b">
+                  <span>#ee964b</span>
+                </div>
+                <div class="color" style="background-color: #f95738">
+                  <span>#f95738</span>
+                </div>
+              </div>
+              <div class="palette-label">Modern Art Studio</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #000000">
+                  <span>#000000</span>
+                </div>
+                <div class="color" style="background-color: #14213d">
+                  <span>#14213d</span>
+                </div>
+                <div class="color" style="background-color: #fca311">
+                  <span>#fca311</span>
+                </div>
+                <div class="color" style="background-color: #e5e5e5">
+                  <span>#e5e5e5</span>
+                </div>
+                <div class="color" style="background-color: #ffffff">
+                  <span>#ffffff</span>
+                </div>
+              </div>
+              <div class="palette-label">Minimalist Design</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #22577a">
+                  <span>#22577a</span>
+                </div>
+                <div class="color" style="background-color: #38a3a5">
+                  <span>#38a3a5</span>
+                </div>
+                <div class="color" style="background-color: #57cc99">
+                  <span>#57cc99</span>
+                </div>
+                <div class="color" style="background-color: #80ed99">
+                  <span>#80ed99</span>
+                </div>
+                <div class="color" style="background-color: #c7f9cc">
+                  <span>#c7f9cc</span>
+                </div>
+              </div>
+              <div class="palette-label">Nature Inspired</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #006d77">
+                  <span>#006d77</span>
+                </div>
+                <div class="color" style="background-color: #83c5be">
+                  <span>#83c5be</span>
+                </div>
+                <div class="color" style="background-color: #edf6f9">
+                  <span>#edf6f9</span>
+                </div>
+                <div class="color" style="background-color: #ffddd2">
+                  <span>#ffddd2</span>
+                </div>
+                <div class="color" style="background-color: #e29578">
+                  <span>#e29578</span>
+                </div>
+              </div>
+              <div class="palette-label">Calm Wellness</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #132a13">
+                  <span>#132a13</span>
+                </div>
+                <div class="color" style="background-color: #31572c">
+                  <span>#31572c</span>
+                </div>
+                <div class="color" style="background-color: #4f772d">
+                  <span>#4f772d</span>
+                </div>
+                <div class="color" style="background-color: #90a955">
+                  <span>#90a955</span>
+                </div>
+                <div class="color" style="background-color: #ecf39e">
+                  <span>#ecf39e</span>
+                </div>
+              </div>
+              <div class="palette-label">Eco Friendly</div>
+            </div>
+            <div class="palette-card">
+              <button class="copy-btn" title="Copy colors">📋</button>
+              <div class="colors">
+                <div class="color" style="background-color: #001427">
+                  <span>#001427</span>
+                </div>
+                <div class="color" style="background-color: #708d81">
+                  <span>#708d81</span>
+                </div>
+                <div class="color" style="background-color: #f4d58d">
+                  <span>#f4d58d</span>
+                </div>
+                <div class="color" style="background-color: #bf0603">
+                  <span>#bf0603</span>
+                </div>
+                <div class="color" style="background-color: #8d0801">
+                  <span>#8d0801</span>
+                </div>
+              </div>
+              <div class="palette-label">Bold Editorial</div>
+            </div>
+
+            <!-- Add more cards as needed -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid learn-color-section py-5"
+        style="background-color: #0f172a; color: #f9fafb"
+        id="learn-color-section"
+      >
+        <div class="container">
+          <h1 class="mb-5" style="color: #f97316; font-weight: bolder">
+            Learn About Colors
+          </h1>
+
+          <h2 style="margin-top: 1.5rem">Why Color Combinations Matter</h2>
+          <p>
+            Perfect color combinations create visual harmony, evoke emotions,
+            and improve usability. Designers use colors to guide user attention
+            and express brand identity. Poor combinations can make content hard
+            to read or off-putting.
+          </p>
+
+          <h2 style="margin-top: 1.5rem">Color Contrast</h2>
+          <p>
+            Contrast refers to the difference in luminance or color that makes
+            elements distinguishable. High contrast is essential for readability
+            and accessibility, especially in text.
+          </p>
+          <div
+            style="
+              background-color: #000;
+              color: #fff;
+              padding: 1rem;
+              margin: 1rem 0;
+              border-radius: 5px;
+            "
+          >
+            This is high contrast (white on black)
+          </div>
+          <div
+            style="
+              background-color: #ccc;
+              color: #999;
+              padding: 1rem;
+              border-radius: 5px;
+            "
+          >
+            This is low contrast (not ideal)
+          </div>
+
+          <h2 style="margin-top: 1.5rem">
+            Primary, Secondary & Tertiary Colors
+          </h2>
+          <ul>
+            <li><strong>Primary Colors:</strong> Red, Blue, Yellow</li>
+            <li>
+              <strong>Secondary Colors:</strong> Green, Orange, Purple (made by
+              mixing primaries)
+            </li>
+            <li>
+              <strong>Tertiary Colors:</strong> Red-Orange, Yellow-Green, etc.
+              (mix of primary and secondary)
+            </li>
+          </ul>
+          <div
+            style="display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap"
+          >
+            <div
+              style="
+                background: red;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Red
+            </div>
+            <div
+              style="
+                background: blue;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Blue
+            </div>
+            <div
+              style="
+                background: yellow;
+                color: #000;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Yellow
+            </div>
+            <div
+              style="
+                background: green;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Green
+            </div>
+            <div
+              style="
+                background: orange;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Orange
+            </div>
+            <div
+              style="
+                background: purple;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+              "
+            >
+              Purple
+            </div>
+          </div>
+
+          <h2 style="margin-top: 1.5rem">Color Harmony Rules</h2>
+
+          <h3>🎯 Triangle Rule / Triadic Colors</h3>
+          <p>
+            Three colors evenly spaced on the color wheel. Balanced, vibrant
+            combos like Red–Blue–Yellow.
+          </p>
+
+          <h3>🎨 Analogous Colors</h3>
+          <p>
+            Colors next to each other on the color wheel, like Blue, Blue-Green,
+            and Green. Great for smooth and calm designs.
+          </p>
+
+          <h3>🟢 Complementary Colors</h3>
+          <p>
+            Opposites on the wheel, like Red and Green or Blue and Orange. High
+            contrast and vibrant.
+          </p>
+
+          <h2 style="margin-top: 1.5rem">Tips for Using Colors</h2>
+          <ul>
+            <li>Keep contrast strong between text and background</li>
+            <li>Use a maximum of 3–4 main colors</li>
+            <li>
+              Check color blindness compatibility (e.g., with tools like Coblis
+              or WebAIM)
+            </li>
+            <li>
+              Use online palettes (Adobe Color, Coolors, etc.) to experiment
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="myfooter">
+        <!-- Footer -->
+        <footer
+          class="text-center text-white rounded-3"
+          style="background-color: #0f172a"
+        >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Info -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center mb-0">
+                <span class="me-3"
+                  >Thank you for visiting our platform – where design meets
+                  simplicity.</span
+                >
+              </p>
+            </section>
+            <!-- Section: Info -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(138, 138, 138, 0.1)"
+          >
+            © 2025 Designed by <strong>Shreyank Parab</strong>. All rights
+            reserved.
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    </div>
+  </body>
+</html>
