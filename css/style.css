@@ -333,7 +333,7 @@ body {
   .color-block {
     margin-top: -20px;
     width: 150px;
-    height: 900px;
+    height: 500px;
     border: 0.1px solid rgb(232, 231, 231);
   }
   .color-code {
@@ -344,26 +344,26 @@ body {
   }
   .palette-card {
     flex: 0 0 400px;
-    height: 250px;
+    height: 200px;
   }
   .color span {
     font-size: 10px;
   }
   .learn-color-section {
-    height: 135vh;
+    height: 170vh;
   }
   .floating-top-right-img {
-    width: 2300px;
-    height: 1400px;
+    width: 1000px;
+    height: 500px;
     /* left: 230px; */
     top: 50px;
     border-radius: 8px;
   }
   .hero-title {
-    font-size: 100px;
+    font-size: 60px;
   }
   .hero-subtitle {
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 @media (max-width: 1441px) {
